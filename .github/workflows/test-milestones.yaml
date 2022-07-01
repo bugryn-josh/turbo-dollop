@@ -1,0 +1,12 @@
+name: 'Get Milestones'
+on:
+  push
+jobs:
+  run-shell:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Get milestone from api endpoint
+      uses: bugryn-josh/turbo-dollop/get-milestones@master
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        GITHUB_REPOSITORY: ${{ github.repository }}

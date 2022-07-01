@@ -1,0 +1,11 @@
+name: 'Get Milestones'
+description: 'Get milestone data and print it out'
+branding:
+  icon: 'check-circle'
+  color: 'red'
+outputs:
+  milestones:
+    description: 'milestone data'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
