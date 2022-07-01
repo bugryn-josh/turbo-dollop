@@ -1,6 +1,7 @@
 name: 'Get Milestones'
 on:
   push
+  #action go
 jobs:
   run-shell:
     runs-on: ubuntu-latest
